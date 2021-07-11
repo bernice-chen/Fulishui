@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Noto Sans CJK TC;
+}
+body{
+    background: url("./payment/backcolor.png") no-repeat;
+    background-size: cover;
+}
+.menu a{
+    color: #9e9384;
+}
+.menu .container{
+    width: 1075px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    width: 100%;
+    height: 115px;
+    box-shadow: 0px 3px 10px #b3b2b2;
+    background: url("./home/images/backline.png") top repeat-x;
+    padding-top: 15px;
+    position: relative;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li{
+    font-size: 22px;
+    color: #9e9384;
+}
+.menu li:hover{
+    box-shadow: 0 3px 0 #ffaf00;
+}
+.menu .senser ul{
+    position: absolute;
+    display: none;
+}
+.senser:hover > ul{
+    background-color: #ffaf00;
+    display: block;
+    z-index: 1;
+    margin-left: -20px;
+}
+.senser ul > li a{
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px 30px;
+}
+.senser ul > li a:hover{
+    background-color: rgba(255,255,255,.4);
+}
+.container .logo:hover{
+    box-shadow: none;
+}
+.application .container{
+    width: 1075px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 120px;
+}
+.application h1,
+.subsidy h1,
+.own-expense h1{
+    font-size: 44px;
+    padding-bottom: 70px;
+    color: #ffaf00;
+    text-align: center;
+}
+.application h2{
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+.application p{
+    font-size: 44px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-style: italic;
+}
+.application .step .txt{
+    display: flex;
+    justify-content: space-between;
+}
+.application .step .txt .num{
+    display: flex;
+    color: #9e9384;
+    align-items: center;
+    padding-right: 35px;
+    padding-bottom: 20px;
+}
+.application .step .pic{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+.application .step .main{
+    display: flex;
+    justify-content: space-between;
+}
+.application .step .main p{
+    font-size: 18px;
+    color: #9e9384;
+    width: 160px;
+    font-style: normal;
+    padding-left: 31px;
+    text-align: start;
+}
+.subsidy .container,
+.own-expense .container{
+    width: 1075px;
+    margin: auto;
+    padding-bottom: 120px;
+}
+.subsidy table,
+.own-expense table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.subsidy th,
+.own-expense th{
+    color: #fff;
+    background: #748e6e;
+    font-size: 21px;
+    padding: 10px 0px;
+    text-align: center;  
+}
+.subsidy td,
+.own-expense td{
+    color: #9e9384;
+    background: rgb(245, 245, 245);
+    font-size: 18px;
+    padding: 12px 0px;
+    text-align: center;
+}
+.subsidy tr,
+.own-expense tr{
+    color: #9e9384;
+    border: 3px solid #fff;
+}
+.subsidy li,
+.own-expense li{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    color: #B0B7B9
+}
+.subsidy li:before{
+    content: '▪';
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+}
+.footer{
+    height: 88px;
+    background-color: #9e9384;
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+}

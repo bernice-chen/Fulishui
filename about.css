@@ -1,0 +1,139 @@
+body{
+    background: url("./about/backcolor.png") no-repeat;
+    background-size: cover;
+}
+.menu .senser ul{
+    position: absolute;
+    display: none;
+}
+.senser:hover > ul{
+    background-color: #ffaf00;
+    display: block;
+    z-index: 1;
+    margin-left: -20px;
+}
+.senser ul > li a{
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px 30px;
+}
+.senser ul > li a:hover{
+    background-color: rgba(255,255,255,.4);
+}
+.idea .container{
+    padding-top: 70px;
+    padding-bottom: 120px;
+    position: relative;
+}
+.idea .container .txt{
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    width: 473px;
+    right: 0;
+    padding: 60px 50px;
+}
+.idea h1{
+    font-size: 44px;
+    color: #ffaf00;
+    padding-bottom: 20px;
+}
+.idea p{
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #9e9384;
+}
+.feature .container{
+    justify-content: flex-end;
+    position: relative;
+    padding-bottom: 220px;
+}
+.feature .container .txt{
+    background-color: rgba(255,255,255,.8);
+    position: absolute;
+    width: 595px;
+    left: 0;
+    top: 220px;
+    padding: 195px 70px 141px 73px;
+}
+.feature h1{
+    font-size: 44px;
+    color: #ffaf00;
+    padding-bottom: 20px;
+}
+.feature p{
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #9e9384;
+}
+.setting .container{
+    position: relative;
+    padding-bottom: 120px;
+}
+.setting .container .txt{
+    background-color: rgba(255,255,255,.8);
+    position: absolute;
+    width: 615px;
+    top: 100px;
+    right: 0;
+    /* border: red 1px solid; */
+    padding: 134px 46px 160px 108px;
+}
+.setting h1{
+    font-size: 44px;
+    color: #ffaf00;
+    padding-bottom: 20px;
+}
+.setting p{
+    font-size: 21px;
+    letter-spacing: 2px;
+    color: #9e9384;
+}
+.people h1{
+    font-size: 44px;
+    color: #ffaf00;
+    width: 170px;
+    text-align: start;
+}
+.people .container{
+    text-align: center;
+    align-items: flex-start;
+    padding-bottom: 170px;
+}
+.people .container img{
+    padding-bottom: 20px;
+}
+.people .txt{
+    width: 185px;
+}
+.people h2{
+    font-size: 21px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+.people p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #9e9384;
+}
+.people .attendant{
+    background: url("./about/people_block_01.png") no-repeat;
+    padding: 33px 45px;
+}
+.people .attendant h2{
+    color: #fe593c;
+}
+.people .nurse{
+    background: url("./about/people_block_02.png") no-repeat;
+    padding: 33px 45px;
+}
+.people .nurse h2{
+    color: #748e6e;
+}
+.people .attendant-2{
+    background: url("./about/people_block_03.png") no-repeat;
+    padding: 33px 45px;
+}
+.people .attendant-2 h2{
+    color: #f28619;
+}
