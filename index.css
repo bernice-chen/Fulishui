@@ -455,6 +455,12 @@ body{
     .banner-1 .container,
     .banner-2 .container,
     .banner-3 .container{
+        padding-left:  25px;
+        padding-right:  25px;
+    }
+    .banner-1 .container,
+    .banner-2 .container,
+    .banner-3 .container{
         padding-top: 15vw;
     }
     .banner-1{
