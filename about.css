@@ -1,139 +1,267 @@
+html{
+    font-size: 10px;
+}
 body{
-    background: url("./about/backcolor.png") no-repeat;
+    background: url("./imge/about/about-bg-01.svg") no-repeat;
     background-size: cover;
 }
-.menu .senser ul{
-    position: absolute;
-    display: none;
-}
-.senser:hover > ul{
-    background-color: #ffaf00;
-    display: block;
-    z-index: 1;
-    margin-left: -20px;
-}
-.senser ul > li a{
-    color: #fff;
-    font-size: 18px;
-    display: block;
-    padding: 10px 30px;
-}
-.senser ul > li a:hover{
-    background-color: rgba(255,255,255,.4);
-}
+/* .container{
+    border: 1px solid red;
+} */
 .idea .container{
-    padding-top: 70px;
-    padding-bottom: 120px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 70px 120px 120px;
     position: relative;
+}
+.idea .container .pic{
+    width: 76%;
+}
+.idea .pic img{
+    width: 100%;
+    border-radius: 0 0 0 185px;
 }
 .idea .container .txt{
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255, 255, 255, 0.95);
     position: absolute;
-    width: 473px;
-    right: 0;
-    padding: 60px 50px;
+    width: 410px;
+    right: 120px;
+    top: 160px;
+    padding: 61px 3.2vw;
 }
-.idea h1{
-    font-size: 44px;
+.idea h1,
+.feature h1,
+.setting h1{
+    font-size: 3vw;
+    letter-spacing: 2px;
     color: #ffaf00;
-    padding-bottom: 20px;
+    padding-bottom: 1.3vw;
 }
-.idea p{
-    font-size: 21px;
+.idea p,
+.feature p,
+.setting p{
+    font-size: 1.2vw;
     letter-spacing: 2px;
     color: #9e9384;
+    text-align: justify;
 }
 .feature .container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
     justify-content: flex-end;
     position: relative;
-    padding-bottom: 220px;
+    padding: 0 120px 220px;
+}
+.feature .container .pic{
+    width: 65%;
+}
+.feature .pic img{
+    width: 100%;
+    border-radius: 0 0 13vw 0;
 }
 .feature .container .txt{
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, 0.95);
     position: absolute;
-    width: 595px;
-    left: 0;
-    top: 220px;
-    padding: 195px 70px 141px 73px;
-}
-.feature h1{
-    font-size: 44px;
-    color: #ffaf00;
-    padding-bottom: 20px;
-}
-.feature p{
-    font-size: 21px;
-    letter-spacing: 2px;
-    color: #9e9384;
+    width: 33vw;
+    left: 7.8vw;
+    top: 12.5vw;
+    padding: 11vw 61px 8vw;
 }
 .setting .container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
     position: relative;
-    padding-bottom: 120px;
+    padding: 0 120px 120px;
+}
+.setting .container .pic{
+    width: 61%;
+}
+.setting .container img{
+    width: 100%;
+    border-radius: 0 0 0 13vw;
 }
 .setting .container .txt{
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(255, 255, 255, 0.95);
     position: absolute;
-    width: 615px;
-    top: 100px;
-    right: 0;
-    /* border: red 1px solid; */
-    padding: 134px 46px 160px 108px;
-}
-.setting h1{
-    font-size: 44px;
-    color: #ffaf00;
-    padding-bottom: 20px;
-}
-.setting p{
-    font-size: 21px;
-    letter-spacing: 2px;
-    color: #9e9384;
-}
-.people h1{
-    font-size: 44px;
-    color: #ffaf00;
-    width: 170px;
-    text-align: start;
+    width: 36vw;
+    top: 6.6vw;
+    right: 7.8vw;
+    padding: 8.5vw 3vw 8vw 6.2vw;
 }
 .people .container{
-    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 170px;
+    padding: 0 120px 230px;
+}
+.people h1{
+    font-size: 3vw;
+    letter-spacing: 2px;
+    color: #ffaf00;
+    width: 240px;
+    text-align: start;
+    padding-top: 45px;
 }
 .people .container img{
-    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 1vw 3vw;
 }
-.people .txt{
-    width: 185px;
+.people .container .pic{
+    display: flex;
+}
+.people .attendant,
+.people .nurse,
+.people .attendant-2{
+    width: 240px;
+    padding-left: 20px;
 }
 .people h2{
-    font-size: 21px;
+    font-size: 1.3vw;
     letter-spacing: 2px;
-    padding-bottom: 10px;
+    padding: 8px;
+    color: #f28619;
 }
 .people p{
-    font-size: 15px;
+    font-size: 1vw;
     letter-spacing: 2px;
     color: #9e9384;
+    text-align: justify;
+    padding: 8px;
 }
-.people .attendant{
-    background: url("./about/people_block_01.png") no-repeat;
-    padding: 33px 45px;
+@media screen and (max-width: 769px){
+    .idea .container,
+    .feature .container,
+    .setting .container,
+    .people .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .idea .container .txt{
+        width: 35vw;
+        right: 6.4vw;
+        top: 12.5vw;
+    }
+    .idea h1,
+    .feature h1,
+    .setting h1,
+    .people h1{
+        font-size: 5vw;
+    }
+    .idea p,
+    .feature p,
+    .setting p{
+        font-size: 2vw;
+    }
+    .feature .container .txt{
+        width: 46vw;
+        left: 6.4vw;
+    }
+    .setting .container .txt{
+        width: 43vw;
+        right: 6.4vw;
+    }
+    .people .attendant,
+    .people .nurse,
+    .people .attendant-2{
+        width: 20vw;
+    }
+    .people h1{
+        width: 22vw;
+        padding-right: 0;
+    }
+    .people h2{
+        font-size: 2vw;
+    }
 }
-.people .attendant h2{
-    color: #fe593c;
-}
-.people .nurse{
-    background: url("./about/people_block_02.png") no-repeat;
-    padding: 33px 45px;
-}
-.people .nurse h2{
-    color: #748e6e;
-}
-.people .attendant-2{
-    background: url("./about/people_block_03.png") no-repeat;
-    padding: 33px 45px;
-}
-.people .attendant-2 h2{
-    color: #f28619;
+@media screen and (max-width: 429px) {
+    .idea .container,
+    .feature .container,
+    .setting .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .idea .container .pic,
+    .feature .container .pic,
+    .setting .container .pic{
+        width: 100%;
+    }
+    .idea .pic img,
+    .feature .pic img,
+    .setting .pic img{
+        border-radius: 0;
+    }
+    .idea .container .txt{
+        position: relative;
+        width: 90%;
+        right: 0;
+        top: -13vw;
+        margin: auto;
+        padding: 4vw 7vw 20vw;
+        text-align: center;
+    }
+    .idea h1,
+    .feature h1,
+    .setting h1{
+        font-size: 10vw;
+        padding-bottom: 5vw;
+    }
+    .idea p,
+    .feature p,
+    .setting p{
+        font-size: 4vw;
+    }
+    .feature .container{
+        flex-direction: column-reverse;
+    }
+    .feature .container .txt{
+        position: relative;
+        width: 90%;
+        left: 0;
+        top: -21vw;
+        text-align: center;
+        margin: auto;
+        padding: 11vw 7vw;
+    }
+    .setting .container .txt{
+        position: relative;
+        width: 90%;
+        top: -13vw;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    .people .container {
+        flex-direction: column;
+    }
+    .people h1{
+        font-size: 10vw;
+        padding-bottom: 7vw;
+        padding-left: 30px;
+        width: 100%;
+    }
+    .people .container .pic {
+        flex-direction: column;
+        align-items: center;
+    }
+    .people .attendant,
+    .people .nurse,
+    .people .attendant-2{
+        width: 70%;
+        padding-bottom: 10vw;
+    }
+    .people h2{
+        font-size: 4vw;
+    }
+    .people p{
+        font-size: 3vw;
+    }
 }

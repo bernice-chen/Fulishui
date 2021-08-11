@@ -4,94 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home.css">
+    <title>富麗水日照中心</title>
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./menu.js"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
-    <div class="menu">
-        <ul class="container">
-            <li><a href="./about.html">關於我們</a></li>
-            <li class="senser">日照服務
-                <ul>
-                    <li><a href="./service.html">服務特色</a></li>
-                    <li><a href="./payment.html">給付額度</a></li>
-                    <li><a href="./traffic.html">交通接送</a></li>
-                </ul>            
-            </li>
-            <li class="logo"><a href="./index.html"><img src="./service/images/logo.png" alt="LOGO"></a></li>
-            <li><a href="./learn.html">樂齡學習</a></li>
-            <li><a href="./contact.html">聯絡我們</a></li>
-        </ul>
+    <div class="page">
+        <header class="menu">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="./imge/home/logo.svg" alt="logo"></a>
+                <ul id="navLinks">
+                    <li class="navbtn"><a href="./about.html">關於我們</a></li>
+                    <li class="nav-li navbtn" onclick="ulFunction(this)">日照服務
+                        <ul id="ulLinks">
+                            <li><a href="./service.html">服務特色</a></li>
+                            <li><a href="./payment.html">給付額度</a></li>
+                            <li><a href="./traffic.html">交通接送</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbtn"><a href="./learn.html">樂齡學習</a></li>
+                    <li class="navbtn"><a href="./contact.html">聯絡我們</a></li>
+                </ul>
+                <div class="icon" onclick="navFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="banner">
+                <div class="wrap">
+                    <div class="banner-1">
+                        <div class="container">
+                            <h1>用心陪伴</h1>
+                            <p>成為您 雖無血緣 卻是最親密的家人</p>
+                        </div>
+                    </div>
+                    <div class="banner-2">
+                        <div class="container">
+                            <h1>友善照護</h1>
+                            <p>尊敬 關懷 為長者建立樂活生活</p>
+                        </div>
+                    </div>
+                    <div class="banner-3">
+                        <div class="container">
+                            <h1>相遇同樂</h1>
+                            <p>打造銀髮俱樂部與您一同活化運動</p>
+                        </div>     
+                    </div>
+                </div>
+                <div id="banner-btn">
+                    <input type="button" id="left-btn" disabled>
+                    <input type="button" id="right-btn">
+                </div>
+            </div>
+            <article class="we">
+                <div class="container">
+                    <div class="txt">
+                        <h1>我們</h1>
+                        <div class="we-main">
+                            <blockquote>
+                                本著自然退化，及在地化的精神融合<br>溫馨家的感覺
+                            </blockquote>
+                            <p>讓長者在安全的環境下，做自己想做的事可延緩老化，子女下班後可以接回照顧，讓長者回到熟悉的生活圈，同時可以活得有尊嚴，生活更漂亮</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="./imge/home/we-2.png">  
+                        <span>
+                            1. 解決照顧困難<br>2. 協助照顧者有喘息空間<br>3. 年輕人的好幫手<br>4. 安置長輩的好選擇
+                        </span>
+                        <div class="pic">
+                        <img src="./imge/home/old-man.svg" alt="老人插圖">                
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="plan">
+                <div class="container">
+                    <div class="txt">
+                        <h1>照顧計畫</h1>
+                        <blockquote>結合度假生活與在地安老的創新模式</blockquote>
+                    </div>
+                    <div class="plan-main">
+                        <div id="class-btn" class="course">
+                            <h2>課程活動</h2>
+                            <img src="./imge/home/class_photo.png" alt="課程照片">
+                            <p>設計多樣化的課程活動，促使長者保持健康</p>
+                        </div>
+                        <div id="classModal" class="cModal">
+                            <div class="cModal-content">
+                                <span class="class-close">&times;</span>
+                                <img src="./imge/home/modal-class.png" alt="大圖-課程照片">
+                            </div>
+                        </div>
+                        <div id="physical-btn" class="physical">
+                            <h2>陪同體檢</h2>
+                            <img src="./imge/home/physical_photo.png" alt="體檢照片">
+                            <p>陪同需照顧對象一同去體檢，等待體檢報告出爐</p>
+                        </div>
+                        <div id="physicalModal" class="pModal">
+                            <div class="pModal-content">
+                                <span class="physical-close">&times;</span>
+                                <img src="./imge/home/modal-physical.png" alt="大圖-體檢照片">
+                            </div>
+                        </div>
+                        <div id="visit-btn" class="visit">
+                            <h2>預約參訪</h2>
+                            <img src="./imge/home/visit_photo.png" alt="參訪照片">
+                            <p>誠摯的歡迎您填寫預約參訪表單，將有專人為您服務</p>
+                        </div>
+                        <div id="visitModal" class="vModal">
+                            <div class="vModal-content">
+                                <span class="visit-close">&times;</span>
+                                <img src="./imge/home/modal-visit.png" alt="大圖-參訪照片">
+                            </div>
+                        </div>
+                        <div id="ask-btn" class="ask">
+                            <h2>家屬諮詢</h2>
+                            <img src="./imge/home/ask_photo.png" alt="諮詢照片">
+                            <p>針對長者在中心的活動情形可以洽詢中心詢問</p>
+                        </div>
+                        <div id="askModal" class="aModal">
+                            <div class="aModal-content">
+                                <span class="ask-close">&times;</span>
+                                <img src="./imge/home/modal-ask.png" alt="大圖-諮詢照片">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="traffic">
+                <div class="container">
+                    <div class="traf">
+                        <div class="map">
+                            <img src="./imge/home/map.svg">
+                            <a href="https://goo.gl/maps/5vYB6iAHLkhkZ2KW9"><img src="./imge/home/landmark.svg" alt="地標"></a>
+                        </div>
+                        <div class="txt">
+                            <h1>交通便捷</h1>
+                            <blockquote>照護中心靠近中壢市區中心，交通便利，對面還有公園環境清幽，生活在這裡，是一種沉澱後的奢華</blockquote>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer class="footer_bg">
+            <p>Copyright © 2021 富立水日間照護中心</p>
+        </footer>
     </div>
-    <div class="banner">
-        <div class="container">
-            <h1>用心陪伴</h1>
-            <p>成為您 雖無血緣 卻是最親密的家人</p>
-        </div>
-    </div>
-    <div class="we">
-        <div class="container">
-            <div class="txt">
-                <h1>我們</h1>
-                <div class="section">
-                    <blockquote>
-                        本著自然退化，及在地化的精神融合<br>溫馨家的感覺
-                    </blockquote>
-                    <p>讓長者在安全的環境下做自己想做的事可延緩老化，子女<br>下班後可以接回照顧，讓長者回到熟悉的生活圈，同時可<br>以活得有尊嚴，生活更漂亮</p>
-                </div>
-            </div>
-            <div class="photo">
-                <img src="./home/images/we-2.png">  
-                <span>
-                    1. 解決照顧困難<br>2. 協助照顧者有喘息空間<br>3. 年輕人的好幫手<br>4. 安置長輩的好選擇
-                </span>
-                <div class="pic">
-                <img src="./home/images/oldman.png" alt="老人插圖">                
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="plan">
-        <div class="container">
-            <div class="txt">
-                <h1>照顧計畫</h1>
-                <blockquote>結合度假生活與在地安老的創新模式</blockquote>
-            </div>
-            <div class="main">
-                <div class="course">
-                    <h2>課程活動</h2>
-                    <img src="./home/images/class_photo.png" alt="課程照片">
-                    <p>設計多樣化的課程活動，促使長者保持健康、活力達到活躍老化之目的</p>
-                </div>
-                <div class="physical">
-                    <h2>陪同體檢</h2>
-                    <img src="./home/images/physical_photo.png" alt="體檢照片">
-                    <p>陪同需照顧對象一同去體檢，等待體檢報告出爐</p>
-                </div>
-                <div class="visit">
-                    <h2>預約參訪</h2>
-                    <img src="./home/images/visit_photo.png" alt="參訪照片">
-                    <p>誠摯的歡迎您來本中心參觀可以填寫預約參訪表單，將有專人為您服務</p>
-                </div>
-                <div class="ask">
-                    <h2>家屬諮詢</h2>
-                    <img src="./home/images/ask_photo.png" alt="諮詢照片">
-                    <p>針對長者在中心的活動情形可以洽詢中心詢問</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="traffic">
-        <div class="container">
-            <img src="./home/images/map.png">
-            <div class="txt">
-                <h1>交通便捷</h1>
-                <blockquote>照護中心靠近中壢市區中心，交通便利，對面還有公園環境清幽，生活在這裡，是一種沉澱後的奢華</blockquote>
-            </div>
-        </div>
-    </div>    
-    <div class="footer">
-        <p>Copyright © 2021 富立水日間照護中心</p>
-    </div>      
 </body>
 </html>

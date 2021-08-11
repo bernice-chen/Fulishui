@@ -4,81 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="about.css">
+    <title>富麗水日照中心</title>
+    <link rel="stylesheet" href="./menu.css">
+    <script src="./menu.js"></script>
+    <link rel="stylesheet" href="./about.css">
 </head>
 <body>
-    <div class="menu">
-        <ul class="container">
-            <li><a href="./about.html">關於我們</a></li>
-            <li class="senser">日照服務
-                <ul>
-                    <li><a href="./service.html">服務特色</a></li>
-                    <li><a href="./payment.html">給付額度</a></li>
-                    <li><a href="./traffic.html">交通接送</a></li>
-                </ul>            
-            </li>
-            <li class="logo"><a href="./index.html"><img src="./service/images/logo.png" alt="LOGO"></a></li>
-            <li><a href="./learn.html">樂齡學習</a></li>
-            <li><a href="./contact.html">聯絡我們</a></li>
-        </ul>
-    </div>
-    <div class="idea">
-        <div class="container">
-            <img src="./about/idea_photo.png" alt="">
-            <div class="txt">
-                <h1>服務理念</h1>
-                <p>讓長者在安全的環境下做自己想做的事可延緩老化，同時可以活得更有尊嚴，生活更漂亮</p>
-            </div>
-        </div>
-    </div>
-    <div class="feature">
-        <div class="container">
-            <div class="txt">
-                <h1>中心特色</h1>
-                <p>我們就像『銀髮俱樂部』，白天長輩來日照中心參與活化活動，晚上回到熟悉的家裡享受溫馨家庭生活，讓同住家人也可以獲得喘息的空間</p>
-        </div>
-            <img src="./about/feature_photo.png" alt="">
-        </div>
-    </div>
-    <div class="setting">
-        <div class="container">
-            <img src="./about/setting_photo.png" alt="">
-            <div class="txt">
-                <h1>中心環境</h1>
-                <p>感受到的是精心打造的溫馨雅緻的環境，及舒適放鬆的空間，使您擁有愉悅的心情，增進您與照護人員間的信任</p>
-            </div>
-        </div>
-    </div>
-    <div class="people">
-        <div class="container">
-            <h1>我們給予專業照護</h1>
-            <div class="attendant">
-                <img src="./about/people_01.png" alt="">
-                <div class="txt">
-                    <h2>照服員</h2>
-                <p>具有照服員證照，以及照護的專業知識，給予最安全的協助與關心</p>
+    <div class="page">
+        <header class="menu">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="./imge/home/logo.svg" alt="logo"></a>
+                <ul id="navLinks">
+                    <li class="navbtns active"><a href="./about.html">關於我們</a></li>
+                    <li class="nav-li navbtns" onclick="ulFunction(this)">日照服務
+                        <ul id="ulLinks">
+                            <li><a href="./service.html">服務特色</a></li>
+                            <li><a href="./payment.html">給付額度</a></li>
+                            <li><a href="./traffic.html">交通接送</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbtns"><a href="./learn.html">樂齡學習</a></li>
+                    <li class="navbtns"><a href="./contact.html">聯絡我們</a></li>
+                </ul>
+                <div class="icon" onclick="navFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
             </div>
-            <div class="nurse">
-                <img src="./about/people_02.png" alt="">
-                <div class="txt">
-                    <h2>主任</h2>
-                    <p>具有護理師資格，豐富醫療知識，給予專業的諮詢回復</p>
+        </header>
+        <section>
+            <div class="idea">
+                <div class="container">
+                    <div class="pic">
+                        <img src="./imge/about/idea_photo.png" alt="服務理念照片">
+                    </div>
+                    <div class="txt">
+                        <h1>服務理念</h1>
+                        <p>讓長者在安全的環境下做自己想做的事可延緩老化，同時可以活得更有尊嚴，生活更漂亮</p>
+                    </div>
                 </div>
             </div>
-            <div class="attendant-2">
-                <img src="./about/people_03.png" alt="">
-                <div class="txt">
-                    <h2>照服員</h2>
-                    <p>具有照服員證照，以及照護的專業知識，給予最安全的協助與關心</p>
+            <div class="feature">
+                <div class="container">
+                    <div class="txt">
+                        <h1>中心特色</h1>
+                        <p>我們就像『銀髮俱樂部』，白天長輩來日照中心參與活化活動，晚上回到熟悉的家裡享受溫馨家庭生活，讓同住家人也可以獲得喘息的空間</p>
+                    </div>
+                    <div class="pic">
+                        <img src="./imge/about/featur_photo.png" alt="中心特色照片">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Copyright © 2021 富立水日間照護中心</p>
+            <div class="setting">
+                <div class="container">
+                    <div class="pic">
+                        <img src="./imge/about/setting_photo.png" alt="中心環境照片">
+                    </div>
+                    <div class="txt">
+                        <h1>中心環境</h1>
+                        <p>感受到的是精心打造的溫馨雅緻的環境，及舒適放鬆的空間，使您擁有愉悅的心情，增進您與照護人員間的信任</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people">
+                <div class="container">
+                    <h1>我們給予專業照護</h1>
+                    <div class="pic">
+                        <div class="attendant">
+                            <img src="./imge/about/people_01.png" alt="">
+                            <div class="txt">
+                                <h2>照服員</h2>
+                            <p>具有照服員證照，以及照護的專業知識，給予最安全的協助與關心</p>
+                            </div>
+                        </div>
+                        <div class="nurse">
+                            <img src="./imge/about/people_02.png" alt="">
+                            <div class="txt">
+                                <h2>主任</h2>
+                                <p>具有護理師資格，豐富醫療知識，給予專業的諮詢回復</p>
+                            </div>
+                        </div>
+                        <div class="attendant-2">
+                            <img src="./imge/about/people_03.png" alt="">
+                            <div class="txt">
+                                <h2>照服員</h2>
+                                <p>具有照服員證照，以及照護的專業知識，給予最安全的協助與關心</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer_bg">
+            <p>Copyright © 2021 富立水日間照護中心</p>
+        </footer>
     </div>
 </body>
 </html>

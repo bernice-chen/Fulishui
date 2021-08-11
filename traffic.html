@@ -4,118 +4,218 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>富麗水日照中心</title>
     <link rel="stylesheet" href="./traffic.css">
+    <link rel="stylesheet" href="./menu.css">
+    <script src="./menu.js"></script>
+    <script src="./traffic.js"></script> 
 </head>
 <body>
-    <div class="menu">
-        <ul class="container">
-            <li><a href="./about.html">關於我們</a></li>
-            <li class="senser">日照服務
-                <ul>
-                    <li><a href="./service.html">服務特色</a></li>
-                    <li><a href="./payment.html">給付額度</a></li>
+    <div class="page">
+        <header class="menu">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="./imge/home/logo.svg" alt="logo"></a>
+                <ul id="navLinks">
+                    <li class="navbtns"><a href="./about.html">關於我們</a></li>
+                    <li class="nav-li navbtns active" onclick="ulFunction(this)">日照服務
+                        <ul id="ulLinks">
+                            <li><a href="./service.html">服務特色</a></li>
+                            <li><a href="./payment.html">給付額度</a></li>
+                            <li><a href="./traffic.html">交通接送</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbtns"><a href="./learn.html">樂齡學習</a></li>
+                    <li class="navbtns"><a href="./contact.html">聯絡我們</a></li>
+                </ul>
+                <div class="icon" onclick="navFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </header>
+        <div class="traffic-nav">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="./service.html">日照服務</a></li>
                     <li><a href="./traffic.html">交通接送</a></li>
-                </ul>            
-            </li>
-            <li class="logo"><a href="./index.html"><img src="./service/images/logo.png" alt="LOGO"></a></li>
-            <li><a href="./learn.html">樂齡學習</a></li>
-            <li><a href="./contact.html">聯絡我們</a></li>
-        </ul>
-    </div>
-    <div class="car">
-        <div class="container">
-            <h1>接送方式</h1>
-            <div class="kind">
-                <div class="vans">
-                    <img src="./traffic/vans.png" alt="車子照片">
-                    <div class="txt">
-                        <input type="button" value="中心接駁車">
+                </ol>
+            </div>
+        </div>
+        <section>
+            <div class="car">
+                <div class="container">
+                    <h1>接送方式</h1>
+                    <div class="kind">
+                        <div class="vans">
+                            <img src="./imge/traffic/vans.svg" width="270" height="99" alt="車子照片">
+                            <div class="txt">
+                                <input type="button" value="中心接駁車" id="vansbtn">
+                            </div>
+                        </div>
+                        <div class="rehabus" id="rehabusBtn">
+                            <img src="./imge/traffic/rehabus.svg" width="270" height="118" alt="車子照片">
+                            <div class="txt">
+                                <input type="button" value="復康巴士" id="rehabusbtn" >
+                            </div>
+                        </div>
+                        <div class="taxi">
+                            <img src="./imge/traffic/taxi.svg" width="260" height="102" alt="車子照片">
+                            <div class="txt">
+                                <input type="button" value="計程車" id="taxibtn">
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="rehabus">
-                    <img src="./traffic/rehabus.png" alt="車子照片">
-                    <div class="txt">
-                        <input type="button" value="復康巴士">
-                    </div>
-                </div>
-                <div class="taxi">
-                    <img src="./traffic/taxi.png" alt="車子照片">
-                    <div class="txt">
-                        <input type="button" value="計程車">
+                    <div class="car-info">
+                        <div id="bus-info-1" class="rehabus-info">
+                            <div class="title">復康巴士</div>
+                            <div class="info">
+                                <div class="txt">
+                                    <h3>服務內容</h3>
+                                    <p>本市復康巴士以乘客居住地區分為北桃園區(桃園區、八德區、龜山區、大溪區、蘆竹區、大園區、復興區)及南桃園區(中壢區、平鎮區、楊梅區、龍潭區、觀音區、新屋區)提供服務</p>
+                                    <hr>
+                                    <h3>服務對象</h3>
+                                    <p>須領有身心障礙者證明</p>
+                                    <hr>
+                                    <h3>服務時間</h3>
+                                    <p>每日8:00至22:00止</p>
+                                    <hr>
+                                    <h3>意見反映</h3>
+                                    <p>意見反映可直撥市民諮詢專線1999或逕向世豪小客車租賃有限公司</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="./imge/traffic/rehabus-2.svg" alt="復康巴士圖示">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bus-info-2" class="vans-info">
+                            <div class="title">中心接駁車</div>
+                            <div class="info">
+                                <div class="txt">
+                                    <h3>服務內容</h3>
+                                    <p>中心提供接駁車接送長者往返居家至本中心之交通接送服務，起點或迄點以八德區、桃園區為原則，跨區域以其他車中服務</p>
+                                    <hr>
+                                    <h3>服務對象</h3>
+                                    <p>居住區以八德、桃園為主</p>
+                                    <hr>
+                                    <h3>服務時間</h3>
+                                    <p>每日8:00至17:00止</p>
+                                    <hr>
+                                    <h3>意見反映</h3>
+                                    <p>意見反映可直撥電話至富立水日照中心</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="./imge/traffic/vans-2.svg" alt="中心接駁車圖示">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bus-info-3" class="taxi-info">
+                            <div class="title">計程車</div>
+                            <div class="info">
+                                <div class="txt">
+                                    <h3>服務內容</h3>
+                                    <p>接（或送）長照需要者居家至社區式服務類長照機構（日間照顧中心、托顧家庭、巷弄長照站、文化健康站、失智社區服務據點、輔具中心</p>
+                                    <hr>
+                                    <h3>服務對象</h3>
+                                    <p>以富立水日照中心派遣區域為主</p>
+                                    <hr>
+                                    <h3>服務時間</h3>
+                                    <p>每日8:00至22:00止</p>
+                                    <hr>
+                                    <h3>意見反映</h3>
+                                    <p>意見反映可直撥電話至富立水日照中心</p>
+                                </div>
+                                <div class="pic">
+                                    <img src="./imge/traffic/taxi-2.svg" alt="計程車圖示">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="subsidy">
-        <div class="container">
-            <h1>接送補助費用</h1>
-            <table>
-                <tr>
-                    <th colspan="2">單趟100元(10公里內)</th>
-                </tr>
-                <tr>
-                    <td>一般戶</td>
-                    <td>16元</td>
-                </tr>
-                <tr>
-                    <td>中低收入戶</td>
-                    <td>5元</td>
-                </tr>
-                <tr>
-                    <td>低收入戶</td>
-                    <td>0元</td>
-                </tr>
-            </table>
-            <ol>
-                <li>受照顧人接送地點超過10公里的里程數，車資依合約自費收托金額計算</li>
-                <li>經核定BD03[社區式服務交通接送]之補助者，依長照給付及支付基準收費</li>
-            </ol>
-        </div>
-    </div>
-    <div class="own-expense">
-        <div class="container">
-            <h1>接送自費費用</h1>
-            <table>
-                <tr>
-                    <th>交通公里數</th>
-                    <th>收費</th>
-                </tr>
-                <tr>
-                    <td>1-3公里</td>
-                    <td>3000</td>
-                </tr>
-                <tr>
-                    <td>3.1-5公里</td>
-                    <td>3500</td>
-                </tr>
-                <tr>
-                    <td>5.1-8.5公里</td>
-                    <td>4000</td>
-                </tr>
-                <tr>
-                    <td>8.6-12公里</td>
-                    <td>4500</td>
-                </tr>
-                <tr>
-                    <td>12.1-15公里</td>
-                    <td>5000</td>
-                </tr>
-                <tr>
-                    <td>15.1公里以上</td>
-                    <td>6000</td>
-                </tr>
-            </table>
-            <ol>
-                <li>以案家到中心遠近計算收費標準，金額從每月3000以上不等</li>
-                <li>計算標準如下表，不足差額自行負擔，以實際趟數收費</li>
-                <li>收費公里計算：中心至案家公里數 X 2</li>
-            </ol>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Copyright © 2021 富立水日間照護中心</p>
+            <div class="subsidy">
+                <div class="container">
+                    <h1>接送補助費用</h1>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">單趟100元(10公里內)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>一般戶</td>
+                                    <td>16元</td>
+                                </tr>
+                                <tr>
+                                    <td>中低收入戶</td>
+                                    <td>5元</td>
+                                </tr>
+                                <tr>
+                                    <td>低收入戶</td>
+                                    <td>0元</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ol>
+                        <li>受照顧人接送地點超過10公里的里程數，車資依合約自費收托金額計算</li>
+                        <li>經核定BD03[社區式服務交通接送]之補助者，依長照給付及支付基準收費</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="own-expense">
+                <div class="container">
+                    <h1>接送自費費用</h1>
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>交通公里數</th>
+                                    <th>收費</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1-3公里</td>
+                                    <td>3000</td>
+                                </tr>
+                                <tr>
+                                    <td>3.1-5公里</td>
+                                    <td>3500</td>
+                                </tr>
+                                <tr>
+                                    <td>5.1-8.5公里</td>
+                                    <td>4000</td>
+                                </tr>
+                                <tr>
+                                    <td>8.6-12公里</td>
+                                    <td>4500</td>
+                                </tr>
+                                <tr>
+                                    <td>12.1-15公里</td>
+                                    <td>5000</td>
+                                </tr>
+                                <tr>
+                                    <td>15.1公里以上</td>
+                                    <td>6000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ol>
+                        <li>以案家到中心遠近計算收費標準，金額從每月3000以上不等</li>
+                        <li>計算標準如下表，不足差額自行負擔，以實際趟數收費</li>
+                        <li>收費公里計算：中心至案家公里數 X 2</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <footer class="footer_bg">
+            <p>Copyright © 2021 富立水日間照護中心</p>
+        </footer>
     </div>
 </body>
 </html>

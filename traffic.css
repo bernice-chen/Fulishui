@@ -1,128 +1,206 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: Noto Sans CJK TC;
-}
 body{
     background: url("./traffic/backcolor.png") no-repeat;
     background-size: cover;
 }
-.menu a{
-    color: #9e9384;
+/* .container{
+    border: 1px solid red;
+} */
+.traffic-nav .container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
-.menu .container{
-    width: 1075px;
+.traffic-nav .breadcrumb{
+    width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.menu{
-    width: 100%;
-    height: 115px;
-    box-shadow: 0px 3px 10px #b3b2b2;
-    background: url("./home/images/backline.png") top repeat-x;
-    padding-top: 15px;
-    position: relative;
+.breadcrumb li{
+    padding: 1.3vw 1.3vw 0;
+    font-size: 1.2vw;
 }
-.menu ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.breadcrumb a{ 
+    color: #B0B7B9;
 }
-.menu li{
-    font-size: 22px;
-    color: #9e9384;
-}
-.menu li:hover{
-    box-shadow: 0 3px 0 #ffaf00;
-}
-.container .logo:hover{
+.breadcrumb li:hover{
     box-shadow: none;
 }
-.menu .senser ul{
-    position: absolute;
-    display: none;
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #ffaf00;
 }
-.senser:hover > ul{
-    background-color: #ffaf00;
-    display: block;
-    z-index: 1;
-    margin-left: -20px;
+.breadcrumb li + li{
+    padding-left: 0;
 }
-.senser ul > li a{
-    color: #fff;
-    font-size: 18px;
-    display: block;
-    padding: 10px 30px;
+.breadcrumb li + li:before{
+    content: '❭';
+    font-weight: bold;
+    color: #B0B7B9;
+    margin-right: 1.3vw;
 }
-.senser ul > li a:hover{
-    background-color: rgba(255,255,255,.4);
-}
-.container{
-    width: 1075px;
+.car .container,
+.subsidy .container{
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
+    padding: 70px 120px 120px;
 }
-.car .container{
-    width: 1075px;
+.own-expense .container{
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
-    padding-top: 70px;
-    padding-bottom: 140px;
+    padding:70px 120px 230px;
 }
-.car .txt{
-    text-align: center;
-}
-.car h1{
+.car h1,
+.subsidy h1,
+.own-expense h1{
     font-size: 44px;
+    letter-spacing: 2px;
     padding-bottom: 70px;
     color: #ffaf00;
     text-align: center;
 }
 .car .kind{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
 }
 .car .kind img{
     margin-bottom: 30px;
 }
-.car .kind input{
+.car .txt{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.car .kind .vans input{
     font-size: 18px;
     letter-spacing: 2px;
-    padding: 10px 20px;
+    padding: 10px 13px;
     color: #9e9384;
-    border-radius: 15px;
     border: none;
     cursor: pointer;
+    background: url("./imge/traffic/item_gray-S.svg") no-repeat;
+}
+.car .kind .rehabus input{
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 22px;
+    color: #9e9384;
+    border: none;
+    cursor: pointer;
+    background: url("./imge/traffic/item_gray-S.svg") no-repeat;
+}
+.car .kind .taxi input{
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 32px;
+    color: #9e9384;
+    border: none;
+    cursor: pointer;
+    background: url("./imge/traffic/item_gray-S.svg") no-repeat;
 }
 .car .kind input:hover{
-    background-color: #ffaf00;
     color: #fff;
+    background: url("./imge/traffic/item_pink-S.svg") no-repeat;
 }
-.subsidy .container,
-.own-expense .container{
-    padding-bottom: 120px;
+.car .car-info{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.subsidy h1,
-.own-expense h1{
-    font-size: 44px;
-    padding-bottom: 70px;
-    color: #ffaf00;
+.car .rehabus-info{
+    width: 100%;
+    margin: 100px auto 0;
+    padding: 30px;
+    display: block;
+    border: 1px solid rgba(158, 147, 132, 0.3);
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(112, 128, 144, 0.4);
+}
+.car .vans-info,
+.car .taxi-info{
+    width: 100%;
+    margin: 100px auto 0;
+    padding: 30px;
+    border: 1px solid rgba(158, 147, 132, 0.3);
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(112, 128, 144, 0.4);
+    display: none;
+}
+.car .rehabus-info .title,
+.car .vans-info .title,
+.car .taxi-info .title{
+    font-size: 28px;
+    letter-spacing: 2px;
+    width: 170px;
+    color: #fff;
+    background-color: #ffaf00;
+    margin-bottom: 50px;
+    padding: 10px;
     text-align: center;
+    border-radius: 10px;
+}
+.car .rehabus-info .info,
+.car .vans-info .info,
+.car .taxi-info .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.car .info .pic{
+    width: 30%;
+    padding-left: 20px;
+}
+.car .info .txt{
+    width: 65%;
+    text-align: start;
+}
+.car .rehabus-info .txt h3,
+.car .vans-info .txt h3,
+.car .taxi-info .txt h3{
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #f28619;
+    padding-bottom: 30px;
+}
+.car .rehabus-info .txt p,
+.car .vans-info .txt p,
+.car .taxi-info .txt p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    color: #9e9384;
+}
+.car .rehabus-info .txt hr,
+.car .vans-info .txt hr,
+.car .taxi-info .txt hr{
+    margin-bottom: 10px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 .subsidy table,
 .own-expense table{
     width: 100%;
     border-collapse: collapse;
 }
+.subsidy .table th{
+    border-radius: 25px 25px 0 0;
+}
+.own-expense .table th:first-child{
+    border-radius: 25px 0 0 0;
+}
+.own-expense .table th:last-child{
+    border-radius: 0 25px 0 0;
+}
 .subsidy th,
 .own-expense th{
     color: #fff;
     background: rgb(254, 192, 167);
     font-size: 21px;
+    letter-spacing: 2px;
     padding: 10px 0px;
     text-align: center;  
 }
@@ -131,6 +209,7 @@ body{
     color: #9e9384;
     background: rgb(245, 245, 245);
     font-size: 18px;
+    letter-spacing: 2px;
     padding: 12px 0px;
     border: 2px solid #fff;
     text-align: center;
@@ -140,6 +219,10 @@ body{
     color: #9e9384;
     border: 3px solid #fff;
 }
+.subsidy .table tbody td:hover,
+.own-expense .table tbody td:hover{
+    background-color: rgba(254, 192, 167, 0.2);
+}
 .subsidy ol,
 .own-expense ol{
     padding-top: 20px;
@@ -147,9 +230,14 @@ body{
 .subsidy li,
 .own-expense li{
     font-size: 18px;
+    letter-spacing: 2px;
     text-align: center;
     padding-bottom: 8px;
     color: #B0B7B9
+}
+.subsidy li:hover,
+.own-expense li:hover{
+    box-shadow: none;
 }
 .subsidy li:before,
 .own-expense li:before{
@@ -158,12 +246,61 @@ body{
     width: 1.5em;
     height: 1.5em;
 }
-.footer{
-    height: 88px;
-    background-color: #9e9384;
+@media (any-hover:hover) {
+    .car .kind input:hover{
+        color: #fff;
+        background: url("./imge/traffic/item_pink-S.svg") no-repeat;
+    }
+    .subsidy .table tbody td:hover,
+    .own-expense .table tbody td:hover{
+        background-color: rgba(254, 192, 167, 0.2);
+    }
 }
-.footer p{
-    color: #fff;
-    text-align: center;
-    padding-top: 40px;
+@media screen and (max-width:769px) {
+    .breadcrumb li {
+        font-size: 2.2vw;
+    }
+    .car .container,
+    .subsidy .container{
+        padding: 20px 50px 70px;
+    }
+    .own-expense .container{
+        padding: 20px 50px 230px;
+    }
+    .car .rehabus-info,
+    .car .vans-info,
+    .car .taxi-info {
+        margin: 0;
+    }
+    .car .kind{
+        flex-direction: column;
+        align-items: center;
+    }
+    .car .kind .vans,
+    .car .kind .rehabus,
+    .car .kind .taxi{
+        padding-bottom: 12vw;
+    }
+    .subsidy .table,
+    .own-expense .table{
+        overflow: auto;
+    }
+}
+@media screen and (max-width:429px) {
+    .car .container,
+    .subsidy .container,
+    .own-expense .container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .car .info .txt {
+        width: 100%;
+    }
+    .car .car-info .pic{
+        display: none;
+    }
+    .subsidy .table,
+    .own-expense .table{
+        overflow: auto;
+    }
 }

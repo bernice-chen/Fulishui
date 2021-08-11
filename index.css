@@ -1,0 +1,616 @@
+html{
+    font-size: 10px;
+}
+body{
+    background: url("./imge/home/home-bg.svg") no-repeat;
+    background-size: cover;
+}
+/* .container{
+    border: 1px solid red;
+} */
+.banner{
+    position: relative;
+    overflow: hidden;
+    height: 40vw;
+    width: 100%;
+}
+.wrap{
+    position: absolute;
+    height:  40vw;
+    width: 100%;
+}
+.banner-1{
+    width: 100%;
+    height: 40vw;
+    background: url("./imge/home/banner-01.svg") no-repeat;
+    background-size: 100% auto;
+}
+.banner-1 .container,
+.banner-2 .container,
+.banner-3 .container{
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+    padding: 153px 100px 0;
+}
+.banner-1 .container h1,
+.banner-2 .container h1,
+.banner-3 .container h1{
+    font-size: 5.2vw;
+    letter-spacing: 2px;
+    color: #ffaf00;
+    padding-bottom: 20px;
+}
+.banner-1 .container p,
+.banner-2 .container p,
+.banner-3 .container p{
+    font-size: 30px;
+    color: #9e9384;
+    letter-spacing: 2px;
+}
+.banner-2{
+    width: 100%;
+    height: 40vw;
+    background: url("./imge/home/banner-02.svg") no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.banner-3{
+    width: 100%;
+    height: 40vw;
+    background: url("./imge/home/banner-03.svg") no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 200%;
+}
+#banner-btn{
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    z-index: 1;
+}
+.banner input[type=button]{
+    border: none;
+    margin: 0 10px;
+}
+#left-btn{
+    width: 26px; 
+    background: url("./imge/home/left-btn.svg") no-repeat;
+}
+#right-btn{
+    width: 26px;
+    background: url("./imge/home/right-btn.svg") no-repeat; 
+}
+#left-btn:hover{
+    background: url("./imge/home/left-btn-yw.svg") no-repeat;
+}
+#right-btn:hover{
+    background: url("./imge/home/right-btn-yw.svg") no-repeat;
+}
+.we .container,
+.plan .container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 70px 120px 120px;
+}
+.we .txt{
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+}
+.we .txt h1,
+.plan .txt h1{
+    font-size: 65px;
+    color: #ffaf00;
+    padding-left: 6px;
+}
+.we .we-main{
+    padding: 55px 0 50px 23px;
+}
+.we blockquote{
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: #9e9384;
+}
+.we-main p{
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: 3.2px;
+    color: #9e9384;
+    width: 400px;
+    padding-top: 5px;
+}
+.we .photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.we span{
+    font-size: 15px;
+    line-height: 2;
+    color: #9e9384;
+    padding-left: 50px;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+.we .pic img{
+    position: absolute;
+    width: 350px;
+    right: 0;
+}
+.plan .txt{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 145px;
+}
+.plan blockquote{
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: #9e9384;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-left: -30px;
+}
+.plan h2{
+    font-size: 15px;
+    padding: 3px 0;
+    margin-bottom: 4.5px;
+    text-align: center;
+}
+.plan .plan-main p{
+    font-size: 1vw;
+    letter-spacing: 1px;
+    padding-left: 7px;
+    padding-top: 4px;
+    color: #9e9384;
+    text-align: justify;
+}
+.plan .plan-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.plan .plan-main > div{
+    height: 300px;
+    width: 175px;
+    padding: 10px 15px 0 10px;
+}
+.plan .plan-main img{
+    width: 100%;
+}
+.plan .plan-main .course{
+    cursor: pointer;
+    background: url("./imge/home/class_color.svg") no-repeat;
+    background-size: 100% auto;
+    transform: translateY(0px);
+}
+.plan .plan-main .physical{
+    cursor: pointer;
+    background: url("./imge/home/pfysical_color.svg") no-repeat;
+    background-size: 100% auto;
+    transform: translateY(0px);
+}
+.plan .plan-main .visit{
+    cursor: pointer;
+    background: url("./imge/home/visit_color.svg") no-repeat;
+    background-size: 100% auto;
+    transform: translateY(0px);
+}
+.plan .plan-main .ask{
+    cursor: pointer;
+    background: url("./imge/home/ask_color.svg") no-repeat;
+    background-size: 100% auto;
+    transform: translateY(0px);
+}
+.plan .plan-main .course:hover,
+.plan .plan-main .physical:hover,
+.plan .plan-main .visit:hover,
+.plan .plan-main .ask:hover{
+    transform: translateY(-10px);
+}
+.plan .course h2{
+    color: #fe593c;
+}
+.plan .physical h2{
+    color: #437b95;
+}
+.plan .visit h2{
+    color: #f28619;
+}
+.plan .ask h2{
+    color: #748e6e;
+}
+.plan .plan-main .cModal,
+.plan .plan-main .pModal,
+.plan .plan-main .vModal,
+.plan .plan-main .aModal{
+    display: none;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.plan .plan-main .cModal-content,
+.plan .plan-main .pModal-content,
+.plan .plan-main .vModal-content,
+.plan .plan-main .aModal-content{
+    background-color: #fefefe;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(112, 128, 144, 0.4);
+    border-radius: 2.5vw;
+    width: 40%;
+}
+.plan .plan-main .class-close,
+.plan .plan-main .physical-close,
+.plan .plan-main .visit-close,
+.plan .plan-main .ask-close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.plan .plan-main .class-close:hover,
+.plan .plan-main .physical-close:hover,
+.plan .plan-main .visit-close:hover,
+.plan .plan-main .ask-close:hover{
+    color: #ffaf00;
+    text-decoration: none;
+    cursor: pointer;
+}
+.traffic .container{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    padding: 0 120px 230px;
+}
+.traffic .container .traf{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.traffic .map{
+    position: relative;
+    width: 64%;
+    margin-bottom: 60px;
+    padding-right: 36px;
+}
+.traffic h1{
+    font-size: 65px;
+    color: #ffaf00;
+    padding-bottom: 3.2vw;
+}
+.traffic blockquote{
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: #9e9384;
+    text-align: justify;
+}
+.traffic img:last-child{
+    width: 30px;
+    position: absolute;
+    top: -116px;
+    left: -23px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.traffic img:hover{
+    animation:landmark 1.5s infinite;
+}
+@keyframes landmark
+{
+0% {top:-116px;}
+100% {top:-100px;}
+}
+@media (any-hover:hover) {
+    #left-btn:hover{
+        background: url("./imge/home/left-btn-yw.svg") no-repeat;
+    }
+    #right-btn:hover{
+        background: url("./imge/home/right-btn-yw.svg") no-repeat;
+    }
+    .plan .plan-main .course:hover,
+    .plan .plan-main .physical:hover,
+    .plan .plan-main .visit:hover,
+    .plan .plan-main .ask:hover{
+        transform: translateY(-10px);
+    }
+    .traffic img:hover{
+        animation:landmark 1.5s infinite;
+    }
+    @keyframes landmark
+    {
+    0% {top:-116px;}
+    100% {top:-100px;}
+    }
+}
+@media screen and (max-width: 769px){
+    .banner-1 .container,
+    .banner-2 .container,
+    .banner-3 .container{
+        padding: 55px 50px 0;
+    }
+    .banner-1 .container h1,
+    .banner-2 .container h1,
+    .banner-3 .container h1{
+        font-size: 8vw;
+        padding-bottom: 0;
+    }
+    .banner-1 .container p,
+    .banner-2 .container p,
+    .banner-3 .container p{
+        font-size: 3vw;
+    }
+    #banner-btn {
+        bottom: 1.5vw;
+        left: 45vw;
+    }
+    #left-btn,
+    #right-btn {
+        width: 2vw;
+    }
+    .we .container,
+    .plan .container,
+    .traffic .container{
+        padding: 0 50px 0;
+    }
+    .we .we-main{
+        padding-top: 35px;
+    }
+    .we .txt h1,
+    .plan .txt h1,
+    .traffic .txt h1{
+        font-size: 6.3vw;
+    }
+    .we blockquote{
+        font-size: 2.5vw;
+    }
+    .we-main p{
+        font-size: 2vw;
+        width: 340px;
+        padding-top: 18px;
+    }
+    .we .photo {
+        justify-content: space-between;
+        padding: 0;
+    }
+    .we span{
+        font-size: 2vw;
+        padding-left: 0;
+    }
+    .we .pic img{
+        display: none;
+    }
+    .plan .txt {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .plan h2 {
+        font-size: 2.3vw;
+    }
+    .plan blockquote{
+        font-size: 2.5vw;
+        padding-top: 70px;
+    }
+    .plan .plan-main {
+        justify-content: space-between;
+        padding: 0;
+    }
+    .plan .plan-main > div{
+        margin-bottom: 30px;
+    }
+    .plan .plan-main p{
+        font-size: 2vw;
+    }
+    .plan .plan-main .cModal-content, 
+    .plan .plan-main .pModal-content, 
+    .plan .plan-main .vModal-content, 
+    .plan .plan-main .aModal-content {
+        width: 60%;
+    }
+    .traffic .container{
+        justify-content: center;
+    }
+    .traffic blockquote{
+        font-size: 2.5vw;
+        width: 28vw;
+        text-align: justify;
+    }
+    /* .traffic img:first-child {
+        width: 55vw;
+    }
+    .traffic img:last-child{
+        top: -20vw;
+        left: -16vw;
+        width: 3vw;
+    } */
+}
+@media screen and (max-width: 429px){
+    .banner{
+        height: 60vw;
+    }
+    .banner .wrap{
+        height: 100%;
+    }
+    .banner-1 .container,
+    .banner-2 .container,
+    .banner-3 .container{
+        padding-top: 15vw;
+    }
+    .banner-1{
+        height: 100%;
+        background-size: 150%;
+        background-position: -28vw top;
+    }
+    .banner-2,
+    .banner-3{
+        height: 100%;
+        background-size: 150%;
+        background-position: -33vw top;
+    }
+    .banner-1 .container h1,
+    .banner-2 .container h1,
+    .banner-3 .container h1{
+        font-size: 10vw;
+        padding-bottom: 1.5vw;
+    }
+    .banner-1 .container p,
+    .banner-2 .container p,
+    .banner-3 .container p{
+        font-size: 3vw; 
+    }
+    #banner-btn{
+        left: 45vw;
+    }
+    .we .container,
+    .plan .container{
+        padding: 0 25px 0;
+    }
+    .we .txt{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vw;
+    }
+    .we .we-main{
+        padding-top: 4vw;
+        padding-bottom: 10vw;
+    }
+    .we .txt h1,
+    .plan .txt h1,
+    .traffic .txt h1{
+        font-size: 10vw;
+        padding-left: 0;
+    }
+    .we blockquote{
+        font-size: 4vw;
+    }
+    .we .we-main p{
+        font-size: 3vw;
+        width: 72vw;
+        padding-top: 3vw;
+        text-align: justify;
+    }
+    .we .photo{
+        flex-direction: column;
+    }
+    .we .photo img{
+        width: 88%;
+        padding-bottom: 4vw;
+    }
+    .we span{
+        font-size: 3vw;
+        padding-left: 4vw;
+    }
+    .we .pic img{
+        display: none;
+    }
+    .plan .txt{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 11.5vw;
+    }
+    .plan blockquote {
+        font-size: 4vw;
+        padding-top: 3.2vw;
+        padding-bottom: 7vw;
+    }
+    .plan .plan-main > div{
+        width: 35vw;
+        height: 58vw;
+    }
+    .plan h2{
+        font-size: 3vw;
+        padding-left: 2vw;
+        margin-left: -3vw;
+    }
+    .plan .plan-main img{
+        width: 95%;
+    }
+    .plan .plan-main{
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .plan .plan-main p{
+        font-size: 2vw;
+        width: 30vw;
+        padding-left: 3vw;
+    }
+    .plan .plan-main .course,
+    .plan .plan-main .physical,
+    .plan .plan-main .visit,
+    .plan .plan-main .ask{
+        margin-bottom: 6vw;
+    }
+    .plan .plan-main .cModal-content, 
+    .plan .plan-main .pModal-content, 
+    .plan .plan-main .vModal-content, 
+    .plan .plan-main .aModal-content {
+        padding: 9px;
+        width: 75%;
+    }
+    .plan .plan-main .class-close,
+    .plan .plan-main .physical-close,
+    .plan .plan-main .visit-close,
+    .plan .plan-main .ask-close{
+        font-size: 15px;
+    }
+    .traffic .container{
+        padding-left: 25px;
+        padding-right: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .traffic .container .traf {
+        flex-direction: column-reverse;
+    }
+    .traffic .map {
+        width: 100%;
+        padding-right: 0;
+    }
+    .traffic img:first-child {
+        width: 80vw;
+        padding: 0;
+        margin-top: 10%
+    }
+    .traffic .txt{
+        width: 100%;
+        text-align: center;
+    }
+    .traffic blockquote{
+        font-size: 4vw;
+        width: 100%;
+    }
+    .traffic img:last-child{
+        width: 5vw;
+        top: 10.5vw;
+        left: -21vw;
+    }
+    @keyframes landmark
+    {
+    0% {top:10.5vw;}
+    100% {top:9.5vw;}
+    }
+}
