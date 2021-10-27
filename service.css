@@ -71,7 +71,8 @@ body{
 .time .txt,
 .people .txt,
 .zone .txt{
-    width: 43.75%;
+    width: 39%;
+    /* width: 43.75%; */
 }
 .detail-item{
     font-size: 1.3vw;
