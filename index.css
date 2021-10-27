@@ -289,7 +289,7 @@ body{
 }
 .traffic .map{
     position: relative;
-    width: 64%;
+    width: 150%;
     margin-bottom: 60px;
     padding-right: 36px;
 }
